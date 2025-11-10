@@ -1,0 +1,49 @@
+:root {
+    --pistachio-primary: #80B363;
+    --pistachio-secondary: #A8C99A;
+    --pistachio-dark: #556B2F;
+    --pistachio-light: #F1F8E9;
+    --gold-accent: #C19A6B;
+    --text-dark: #2C2C2C;
+    --text-light: #666;
+    --white: #FFFFFF;
+    --shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    --shadow-hover: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* ===== BOOTSTRAP OVERRIDES ===== */
+.text-pistachio { color: var(--pistachio-primary) !important; }
+.bg-pistachio { background-color: var(--pistachio-primary) !important; }
+.bg-pistachio-light { background-color: var(--pistachio-light) !important; }
+
+.btn-primary {
+    background-color: var(--pistachio-primary);
+    border-color: var(--pistachio-primary);
+}
+
+.btn-primary:hover {
+    background-color: var(--pistachio-dark);
+    border-color: var(--pistachio-dark);
+}
+
+.btn-outline-primary {
+    color: var(--pistachio-primary);
+    border-color: var(--pistachio-primary);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--pistachio-primary);
+    border-color: var(--pistachio-primary);
+    color: var(--white);
+}
+
+.btn-outline-light {
+    border-width: 2px;
+    font-weight: 600;
+}
+
+.btn-outline-light:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: var(--pistachio-primary);
+    color: var(--pistachio-primary);
+}

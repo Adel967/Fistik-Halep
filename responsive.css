@@ -1,0 +1,104 @@
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 992px) {
+    .navbar-glass .navbar-nav,
+    .navbar-glass .navbar-icons {
+        display: none;
+    }
+    
+    .navbar-glass .navbar-brand {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-glass {
+        padding: 0.4rem 0;
+    }
+    
+    .navbar-glass .navbar-brand {
+        font-size: 1.3rem;
+    }
+    
+    .hero-with-navbar .slide-content {
+        padding-top: 60px;
+    }
+    
+    .hero-title {
+        font-size: 2.5rem !important;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .carousel-item {
+        background-attachment: scroll;
+    }
+    
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 50px;
+        height: 50px;
+        margin: 0 15px;
+    }
+    
+    .carousel-indicators.modern-line {
+        bottom: 100px;
+    }
+    
+    .hero-with-navbar .features-bar {
+        padding: 1rem 0;
+    }
+    
+    .animate-image {
+        transform: translateY(30px);
+        animation: slideInUp 0.8s ease-out 0.4s forwards;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar-glass .navbar-brand {
+        font-size: 1.2rem;
+    }
+    
+    .hero-with-navbar .slide-content {
+        padding-top: 55px;
+    }
+    
+    .hero-title {
+        font-size: 2rem !important;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+    
+    .hero-buttons .btn {
+        width: 100%;
+        margin-bottom: 1rem;
+        z-index: 10;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        z-index: 10;
+    }
+    
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 40px;
+        height: 40px;
+        margin: 0 10px;
+    }
+    
+    .carousel-indicators.modern-line {
+        bottom: 80px;
+    }
+    
+    .animate-title { animation-delay: 0.3s; }
+    .animate-subtitle { animation-delay: 0.5s; }
+    .animate-buttons { animation-delay: 0.7s; }
+    .animate-image { animation-delay: 0.3s; }
+}

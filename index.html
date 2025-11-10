@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Al-Halawat | Premium Arabic Desserts</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+<link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <!-- Announcement Bar -->
+    <!-- <div class="announcement-bar bg-dark text-white py-2">
+        <div class="container text-center">
+            <p class="mb-0 small"><i class="fas fa-shipping-fast me-2"></i>Free Delivery across Dubai on orders above 100 AED</p>
+        </div>
+    </div> -->
+
+    <!-- Navigation -->
+<!-- Merged Navbar & Hero Section -->
+    <section id="home" class="hero-with-navbar">
+        <!-- Navbar Inside Hero -->
+<nav class="navbar navbar-expand-lg navbar-dark navbar-glass">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            Fistik Halep
+        </a>
+        
+        <div class="d-flex align-items-center">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#products">Desserts</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+            
+            <div class="navbar-icons d-flex gap-3 ms-3">
+                <a href="#" class="nav-link">
+                    <i class="fas fa-search"></i>
+                </a>
+                <a href="#" class="nav-link position-relative">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill">3</span>
+                </a>
+                <a href="#" class="nav-link">
+                    <i class="fas fa-user"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+        <!-- Hero Slider -->
+        <div id="heroCarousel" class="carousel slide h-100" data-bs-ride="carousel">
+            <div class="carousel-indicators modern-line">
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+            </div>
+            
+            <div class="carousel-inner h-100">
+                <!-- Slide 1 -->
+                <div class="carousel-item active h-100" style="background-image: url('https://scontent.fcai19-7.fna.fbcdn.net/v/t39.30808-6/487451164_1223317176461253_703431963882321794_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_ohc=b3GlV06oW2QQ7kNvwGsaEkr&_nc_oc=AdnhuiQe77tzk7nX36PJ8tZ5j8GzVNG_OVs5pdyX-DZ2nZTyImS5BkdC4svXiatu4_Q&_nc_zt=23&_nc_ht=scontent.fcai19-7.fna&_nc_gid=sY-PsLCrqRy9sp3blOWMzw&oh=00_AfjxxqxrsLRV37CNBI413aaI13bM4APu2E03bdYHHyXm_w&oe=6916CF22')">
+                    <div class="slide-overlay"></div>
+                    <div class="slide-content h-100 d-flex align-items-center">
+                        <div class="container">
+                            <div class="row justify-content-center text-center">
+                                <div class="col-lg-8 col-md-10">
+                                    <h1 class="hero-title display-2 fw-bold mb-4 animate-title text-white">Authentic Arabic Sweets</h1>
+                                    <p class="hero-subtitle lead mb-4 animate-subtitle text-white">Crafted with traditional recipes and the finest ingredients. Experience the taste of the Middle East.</p>
+                                    <div class="hero-buttons animate-buttons">
+                                        <button class="btn btn-primary btn-lg me-3">Order Now</button>
+                                        <button class="btn btn-outline-light btn-lg">View Menu</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Slide 2 -->
+                <div class="carousel-item h-100" style="background-image: url('https://scontent.fcai19-7.fna.fbcdn.net/v/t39.30808-6/487451164_1223317176461253_703431963882321794_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_ohc=b3GlV06oW2QQ7kNvwGsaEkr&_nc_oc=AdnhuiQe77tzk7nX36PJ8tZ5j8GzVNG_OVs5pdyX-DZ2nZTyImS5BkdC4svXiatu4_Q&_nc_zt=23&_nc_ht=scontent.fcai19-7.fna&_nc_gid=sY-PsLCrqRy9sp3blOWMzw&oh=00_AfjxxqxrsLRV37CNBI413aaI13bM4APu2E03bdYHHyXm_w&oe=6916CF22')">
+                    <div class="slide-overlay"></div>
+                    <div class="slide-content h-100 d-flex align-items-center">
+                        <div class="container">
+                            <div class="row justify-content-center text-center">
+                                <div class="col-lg-8 col-md-10">
+                                    <h1 class="hero-title display-2 fw-bold mb-4 animate-title text-white">Fresh Daily Preparation</h1>
+                                    <p class="hero-subtitle lead mb-4 animate-subtitle text-white">Our desserts are made fresh every day using traditional methods and premium ingredients.</p>
+                                    <div class="hero-buttons animate-buttons">
+                                        <button class="btn btn-primary btn-lg me-3">Order Now</button>
+                                        <button class="btn btn-outline-light btn-lg">View Menu</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Slide 3 -->
+                <div class="carousel-item h-100" style="background-image: url('https://scontent.fcai19-11.fna.fbcdn.net/v/t39.30808-6/475067588_2005672299917670_7830733480121454837_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_ohc=FiOnA9JpD8gQ7kNvwEwbaQt&_nc_oc=AdnbD0LP59NZiHfwAbuKZxtjAVW_IvHgvIp6t3FARpUcEUu9sNierJXfBCyWGh8weeU&_nc_zt=23&_nc_ht=scontent.fcai19-11.fna&_nc_gid=0uTV61SiWKAbkIqI9znQEQ&oh=00_AfgItX76LMSu5Vrp3g56g3FL2zik0zUn7yAB8Qjo1R2RGw&oe=6916D2F2')">
+                    <div class="slide-overlay"></div>
+                    <div class="slide-content h-100 d-flex align-items-center">
+                        <div class="container">
+                            <div class="row justify-content-center text-center">
+                                <div class="col-lg-8 col-md-10">
+                                    <h1 class="hero-title display-2 fw-bold mb-4 animate-title text-white">Ramadan Special Offers</h1>
+                                    <p class="hero-subtitle lead mb-4 animate-subtitle text-white">Enjoy 20% off on all dessert boxes for Iftar. Limited time offer!</p>
+                                    <div class="hero-buttons animate-buttons">
+                                        <button class="btn btn-primary btn-lg me-3">Order Now</button>
+                                        <button class="btn btn-outline-light btn-lg">View Offers</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+
+        <!-- Features Bar -->
+        <!-- <div class="features-bar">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-md-4">
+                        <div class="feature-item">
+                            <i class="fas fa-shipping-fast text-pistachio fs-4 mb-2"></i>
+                            <h6 class="mb-1 text-white">Free Delivery</h6>
+                            <small class="text-light">Across Dubai</small>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="feature-item">
+                            <i class="fas fa-leaf text-pistachio fs-4 mb-2"></i>
+                            <h6 class="mb-1 text-white">Fresh Daily</h6>
+                            <small class="text-light">Made with Love</small>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="feature-item">
+                            <i class="fas fa-award text-pistachio fs-4 mb-2"></i>
+                            <h6 class="mb-1 text-white">Premium Quality</h6>
+                            <small class="text-light">Best Ingredients</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    </section>
+
+    <!-- Categories Section -->
+<section class="categories py-5">
+    <div class="container">
+        <h2 class="section-title text-center mb-5">Our Collections</h2>
+        <p class="text-center text-muted lead mb-5">Discover our authentic Arabic dessert varieties</p>
+        <div class="row g-4">
+            <!-- Kunafa -->
+            <div class="col-md-3 col-6">
+                <div class="category-card text-center">
+                    <div class="category-image square-image mx-auto mb-3">
+                        <img src="https://scontent.fcai19-11.fna.fbcdn.net/v/t39.30808-6/474775404_2004104783407755_8050975501179292871_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=3a1ebe&_nc_ohc=LIb55Y2CUb0Q7kNvwGTy_bk&_nc_oc=AdluBk5KmhckKyTmJipJf94_e5CJY-2lGNUr3CQ1rKHE_K-PS5hkdzul-nLmicXFF-U&_nc_zt=23&_nc_ht=scontent.fcai19-11.fna&_nc_gid=cq5WM-WaXVtEmqysYbKZDQ&oh=00_AfhfPDZk3TkcplV5uarV1dNDbhMPWun_zLkfv-Wu73h9nA&oe=6917FC76" 
+                            alt="Kunafa" 
+                            class="category-img">
+                        <div class="category-overlay"></div>
+                    </div>
+                    <h5>Kunafa</h5>
+                    <p class="text-muted small mb-0">Cheese pastry delight</p>
+                </div>
+            </div>
+
+            <!-- Baklava -->
+            <div class="col-md-3 col-6">
+                <div class="category-card text-center">
+                    <div class="category-image mx-auto mb-3">
+                        <img src="https://scontent.fcai19-4.fna.fbcdn.net/v/t39.30808-6/474862558_2005980709886829_6612641868717629716_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_ohc=ZCL9NyVSGgIQ7kNvwFpldTS&_nc_oc=AdnXebaSdam7r67zEgcMEzTCZwuwcLXCflAimkdiTfYgXgotGVRGE-fHjVWpQdQFEok&_nc_zt=23&_nc_ht=scontent.fcai19-4.fna&_nc_gid=QmojCpgXEvfKlkVcmsNy4w&oh=00_Afgk19V_YP_qAxAPwFb0qkD06J4SyCqRObu6W5kWmUIe9g&oe=6917F770" 
+                             alt="Baklava" 
+                             class="category-img">
+                        <div class="category-overlay"></div>
+                    </div>
+                    <h5>Baklava</h5>
+                    <p class="text-muted small mb-0">Layered nut pastry</p>
+                </div>
+            </div>
+
+            <!-- Basbousa -->
+            <div class="col-md-3 col-6">
+                <div class="category-card text-center">
+                    <div class="category-image mx-auto mb-3">
+                        <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?w=400&h=400&fit=crop&crop=center" 
+                             alt="Basbousa" 
+                             class="category-img">
+                        <div class="category-overlay"></div>
+                    </div>
+                    <h5>Basbousa</h5>
+                    <p class="text-muted small mb-0">Semolina cake</p>
+                </div>
+            </div>
+
+            <!-- Umm Ali -->
+            <div class="col-md-3 col-6">
+                <div class="category-card text-center">
+                    <div class="category-image mx-auto mb-3">
+                        <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=400&h=400&fit=crop&crop=center" 
+                             alt="Umm Ali" 
+                             class="category-img">
+                        <div class="category-overlay"></div>
+                    </div>
+                    <h5>Umm Ali</h5>
+                    <p class="text-muted small mb-0">Bread pudding</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Featured Products Section -->
+    <section id="products" class="featured-products py-5">
+    <div class="container">
+        <h2 class="section-title text-center mb-5">Best Sellers</h2>
+        <p class="text-center text-muted lead mb-5">Most loved by our customers</p>
+        <div class="row g-4">
+            <!-- Product 1 -->
+            <div class="col-lg-3 col-md-6">
+                    <div class="product-card card h-100">
+                    <div class="position-relative">
+                        <span class="product-badge bg-pistachio">Popular</span>
+                        <div class="product-image">
+                            <img src="https://scontent.fcai19-11.fna.fbcdn.net/v/t39.30808-6/475067588_2005672299917670_7830733480121454837_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_ohc=FiOnA9JpD8gQ7kNvwEwbaQt&_nc_oc=AdnbD0LP59NZiHfwAbuKZxtjAVW_IvHgvIp6t3FARpUcEUu9sNierJXfBCyWGh8weeU&_nc_zt=23&_nc_ht=scontent.fcai19-11.fna&_nc_gid=0uTV61SiWKAbkIqI9znQEQ&oh=00_AfgItX76LMSu5Vrp3g56g3FL2zik0zUn7yAB8Qjo1R2RGw&oe=6916D2F2" 
+                                alt="Classic Kunafa" 
+                                class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Classic Kunafa</h5>
+                        <p class="card-text">Golden pastry with premium cheese and pistachio topping</p>
+                        <div class="product-meta d-flex justify-content-between align-items-center mb-3">
+                            <span class="price">45.00 AED</span>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <small class="text-muted ms-1">(128)</small>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary mt-auto">
+                            <i class="fas fa-shopping-cart me-2"></i>Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="col-lg-3 col-md-6">
+                <div class="product-card card h-100">
+                    <div class="position-relative">
+                        <span class="product-badge bg-pistachio">Popular</span>
+                        <div class="product-image">
+                            <img src="https://scontent.fcai19-7.fna.fbcdn.net/v/t39.30808-6/487451164_1223317176461253_703431963882321794_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_ohc=b3GlV06oW2QQ7kNvwGsaEkr&_nc_oc=AdnhuiQe77tzk7nX36PJ8tZ5j8GzVNG_OVs5pdyX-DZ2nZTyImS5BkdC4svXiatu4_Q&_nc_zt=23&_nc_ht=scontent.fcai19-7.fna&_nc_gid=sY-PsLCrqRy9sp3blOWMzw&oh=00_AfjxxqxrsLRV37CNBI413aaI13bM4APu2E03bdYHHyXm_w&oe=6916CF22" 
+                                alt="Classic Kunafa" 
+                                class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Pistachio Baklava</h5>
+                        <p class="card-text">Layered filo pastry with crushed pistachios and honey syrup</p>
+                        <div class="product-meta d-flex justify-content-between align-items-center mb-3">
+                            <span class="price">35.00 AED</span>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <small class="text-muted ms-1">(256)</small>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary mt-auto">
+                            <i class="fas fa-shopping-cart me-2"></i>Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+              <!-- Product 2 -->
+            <div class="col-lg-3 col-md-6">
+                <div class="product-card card h-100">
+                    <div class="position-relative">
+                        <span class="product-badge bg-pistachio">Popular</span>
+                        <div class="product-image">
+                            <img src="https://scontent.fcai19-7.fna.fbcdn.net/v/t39.30808-6/487451164_1223317176461253_703431963882321794_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_ohc=b3GlV06oW2QQ7kNvwGsaEkr&_nc_oc=AdnhuiQe77tzk7nX36PJ8tZ5j8GzVNG_OVs5pdyX-DZ2nZTyImS5BkdC4svXiatu4_Q&_nc_zt=23&_nc_ht=scontent.fcai19-7.fna&_nc_gid=sY-PsLCrqRy9sp3blOWMzw&oh=00_AfjxxqxrsLRV37CNBI413aaI13bM4APu2E03bdYHHyXm_w&oe=6916CF22" 
+                                alt="Classic Kunafa" 
+                                class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Pistachio Baklava</h5>
+                        <p class="card-text">Layered filo pastry with crushed pistachios and honey syrup</p>
+                        <div class="product-meta d-flex justify-content-between align-items-center mb-3">
+                            <span class="price">35.00 AED</span>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <small class="text-muted ms-1">(256)</small>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary mt-auto">
+                            <i class="fas fa-shopping-cart me-2"></i>Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+              <!-- Product 2 -->
+            <div class="col-lg-3 col-md-6">
+                <div class="product-card card h-100">
+                    <div class="position-relative">
+                        <span class="product-badge bg-pistachio">Popular</span>
+                        <div class="product-image">
+                            <img src="https://scontent.fcai19-11.fna.fbcdn.net/v/t39.30808-6/475067588_2005672299917670_7830733480121454837_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_ohc=FiOnA9JpD8gQ7kNvwEwbaQt&_nc_oc=AdnbD0LP59NZiHfwAbuKZxtjAVW_IvHgvIp6t3FARpUcEUu9sNierJXfBCyWGh8weeU&_nc_zt=23&_nc_ht=scontent.fcai19-11.fna&_nc_gid=0uTV61SiWKAbkIqI9znQEQ&oh=00_AfgItX76LMSu5Vrp3g56g3FL2zik0zUn7yAB8Qjo1R2RGw&oe=6916D2F2" 
+                                alt="Classic Kunafa" 
+                                class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Pistachio Baklava</h5>
+                        <p class="card-text">Layered filo pastry with crushed pistachios and honey syrup</p>
+                        <div class="product-meta d-flex justify-content-between align-items-center mb-3">
+                            <span class="price">35.00 AED</span>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <small class="text-muted ms-1">(256)</small>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary mt-auto">
+                            <i class="fas fa-shopping-cart me-2"></i>Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                    <div class="product-card card h-100">
+                    <div class="position-relative">
+                        <span class="product-badge bg-pistachio">Popular</span>
+                        <div class="product-image">
+                            <img src="https://scontent.fcai19-11.fna.fbcdn.net/v/t39.30808-6/475067588_2005672299917670_7830733480121454837_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_ohc=FiOnA9JpD8gQ7kNvwEwbaQt&_nc_oc=AdnbD0LP59NZiHfwAbuKZxtjAVW_IvHgvIp6t3FARpUcEUu9sNierJXfBCyWGh8weeU&_nc_zt=23&_nc_ht=scontent.fcai19-11.fna&_nc_gid=0uTV61SiWKAbkIqI9znQEQ&oh=00_AfgItX76LMSu5Vrp3g56g3FL2zik0zUn7yAB8Qjo1R2RGw&oe=6916D2F2" 
+                                alt="Classic Kunafa" 
+                                class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Classic Kunafa</h5>
+                        <p class="card-text">Golden pastry with premium cheese and pistachio topping</p>
+                        <div class="product-meta d-flex justify-content-between align-items-center mb-3">
+                            <span class="price">45.00 AED</span>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <small class="text-muted ms-1">(128)</small>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary mt-auto">
+                            <i class="fas fa-shopping-cart me-2"></i>Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="col-lg-3 col-md-6">
+                <div class="product-card card h-100">
+                    <div class="position-relative">
+                        <span class="product-badge bg-pistachio">Popular</span>
+                        <div class="product-image">
+                            <img src="https://scontent.fcai19-7.fna.fbcdn.net/v/t39.30808-6/487451164_1223317176461253_703431963882321794_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_ohc=b3GlV06oW2QQ7kNvwGsaEkr&_nc_oc=AdnhuiQe77tzk7nX36PJ8tZ5j8GzVNG_OVs5pdyX-DZ2nZTyImS5BkdC4svXiatu4_Q&_nc_zt=23&_nc_ht=scontent.fcai19-7.fna&_nc_gid=sY-PsLCrqRy9sp3blOWMzw&oh=00_AfjxxqxrsLRV37CNBI413aaI13bM4APu2E03bdYHHyXm_w&oe=6916CF22" 
+                                alt="Classic Kunafa" 
+                                class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Pistachio Baklava</h5>
+                        <p class="card-text">Layered filo pastry with crushed pistachios and honey syrup</p>
+                        <div class="product-meta d-flex justify-content-between align-items-center mb-3">
+                            <span class="price">35.00 AED</span>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <small class="text-muted ms-1">(256)</small>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary mt-auto">
+                            <i class="fas fa-shopping-cart me-2"></i>Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+              <!-- Product 2 -->
+            <div class="col-lg-3 col-md-6">
+                <div class="product-card card h-100">
+                    <div class="position-relative">
+                        <span class="product-badge bg-pistachio">Popular</span>
+                        <div class="product-image">
+                            <img src="https://scontent.fcai19-7.fna.fbcdn.net/v/t39.30808-6/487451164_1223317176461253_703431963882321794_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_ohc=b3GlV06oW2QQ7kNvwGsaEkr&_nc_oc=AdnhuiQe77tzk7nX36PJ8tZ5j8GzVNG_OVs5pdyX-DZ2nZTyImS5BkdC4svXiatu4_Q&_nc_zt=23&_nc_ht=scontent.fcai19-7.fna&_nc_gid=sY-PsLCrqRy9sp3blOWMzw&oh=00_AfjxxqxrsLRV37CNBI413aaI13bM4APu2E03bdYHHyXm_w&oe=6916CF22" 
+                                alt="Classic Kunafa" 
+                                class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Pistachio Baklava</h5>
+                        <p class="card-text">Layered filo pastry with crushed pistachios and honey syrup</p>
+                        <div class="product-meta d-flex justify-content-between align-items-center mb-3">
+                            <span class="price">35.00 AED</span>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <small class="text-muted ms-1">(256)</small>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary mt-auto">
+                            <i class="fas fa-shopping-cart me-2"></i>Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+              <!-- Product 2 -->
+            <div class="col-lg-3 col-md-6">
+                <div class="product-card card h-100">
+                    <div class="position-relative">
+                        <span class="product-badge bg-pistachio">Popular</span>
+                        <div class="product-image">
+                            <img src="https://scontent.fcai19-11.fna.fbcdn.net/v/t39.30808-6/475067588_2005672299917670_7830733480121454837_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_ohc=FiOnA9JpD8gQ7kNvwEwbaQt&_nc_oc=AdnbD0LP59NZiHfwAbuKZxtjAVW_IvHgvIp6t3FARpUcEUu9sNierJXfBCyWGh8weeU&_nc_zt=23&_nc_ht=scontent.fcai19-11.fna&_nc_gid=0uTV61SiWKAbkIqI9znQEQ&oh=00_AfgItX76LMSu5Vrp3g56g3FL2zik0zUn7yAB8Qjo1R2RGw&oe=6916D2F2" 
+                                alt="Classic Kunafa" 
+                                class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Pistachio Baklava</h5>
+                        <p class="card-text">Layered filo pastry with crushed pistachios and honey syrup</p>
+                        <div class="product-meta d-flex justify-content-between align-items-center mb-3">
+                            <span class="price">35.00 AED</span>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <small class="text-muted ms-1">(256)</small>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary mt-auto">
+                            <i class="fas fa-shopping-cart me-2"></i>Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Add more products similarly -->
+        </div>
+        
+        <!-- View All Button -->
+        <div class="text-center mt-5">
+            <button class="btn btn-outline-pistachio btn-lg">
+                View All Products <i class="fas fa-arrow-right ms-2"></i>
+            </button>
+        </div>
+    </div>
+</section>
+
+
+
+
+<!-- Testimonials Section -->
+<section class="testimonials py-5">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="section-title">What Our Customers Say</h2>
+            <p class="lead text-muted">Don't just take our word for it</p>
+        </div>
+        <div class="row g-4">
+            <div class="col-lg-4">
+                <div class="testimonial-card p-4">
+                    <div class="rating mb-3">
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                    </div>
+                    <p class="testimonial-text mb-4">
+                        "The best Kunafa I've had outside of Lebanon! The cheese was perfect and the pastry was crispy. Will definitely order again!"
+                    </p>
+                    <div class="customer-info d-flex align-items-center">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=60&h=60&fit=crop&crop=face" 
+                             alt="Sarah M." 
+                             class="customer-img rounded-circle me-3">
+                        <div>
+                            <h6 class="mb-0">Sarah M.</h6>
+                            <small class="text-muted">Dubai Marina</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="testimonial-card p-4">
+                    <div class="rating mb-3">
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                    </div>
+                    <p class="testimonial-text mb-4">
+                        "Authentic taste that reminds me of home. The Baklava is perfectly sweet and the pistachios are so fresh. Highly recommended!"
+                    </p>
+                    <div class="customer-info d-flex align-items-center">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=60&h=60&fit=crop&crop=face" 
+                             alt="Ahmed K." 
+                             class="customer-img rounded-circle me-3">
+                        <div>
+                            <h6 class="mb-0">Ahmed K.</h6>
+                            <small class="text-muted">Jumeirah</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="testimonial-card p-4">
+                    <div class="rating mb-3">
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star-half-alt text-warning"></i>
+                    </div>
+                    <p class="testimonial-text mb-4">
+                        "Perfect for our iftar gatherings! The desserts are always fresh and delivery is super fast. Great service and amazing quality."
+                    </p>
+                    <div class="customer-info d-flex align-items-center">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=60&h=60&fit=crop&crop=face" 
+                             alt="Fatima A." 
+                             class="customer-img rounded-circle me-3">
+                        <div>
+                            <h6 class="mb-0">Fatima A.</h6>
+                            <small class="text-muted">Downtown Dubai</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Our Story Section -->
+<section class="about-preview py-5">
+            <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Traditional Taste, Modern Quality</h2>
+                    <p>For three generations, our family has been perfecting the art of Arabic dessert making. Each recipe tells a story of our heritage, crafted with love and the finest ingredients.</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Dessert Varieties</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">3K+</span>
+                            <span class="stat-label">Happy Customers</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">15+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                    </div>
+                      <div class="text-center mt-1">
+                    <button class="btn btn-primary btn-lg">
+                        Learn More About Us <i class="fas fa-arrow-right ms-2"></i>
+                    </button>
+                </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://scontent.fcai19-4.fna.fbcdn.net/v/t39.30808-6/489730226_1227834086009562_6016548713134930029_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=UMPLCGG0rXwQ7kNvwHdlJh1&_nc_oc=AdmodH1nHMWdpGfiookKZn68n8qd2F3vUPJyhf-dkT0W6EyPvAgP6OFxXxTsKmxTZHE&_nc_zt=23&_nc_ht=scontent.fcai19-4.fna&_nc_gid=-kdUWLDfLBYJZEqz_nWRPQ&oh=00_AfhNk_z25UwpiaSkbHIEDnMOIZaMV_MY5uouxMXkPs_kyg&oe=691809EB">
+                </div>
+            </div>
+            
+        </div>
+</section>
+
+
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Al-Halawat</h3>
+                    <p>Premium Arabic desserts crafted with tradition and love.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <a href="#home">Home</a>
+                    <a href="#products">Our Desserts</a>
+                    <a href="#about">About Us</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Dubai Marina, Dubai</p>
+                    <p><i class="fas fa-phone"></i> +971 4 123 4567</p>
+                    <p><i class="fas fa-envelope"></i> hello@alhalawat.com</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe for updates and offers</p>
+                    <div class="newsletter">
+                        <input type="email" placeholder="Your email">
+                        <button class="btn-subscribe">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Al-Halawat. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>

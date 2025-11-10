@@ -1,0 +1,37 @@
+/* ===== GLASS NAVBAR ===== */
+.navbar-glass {
+    background: rgba(255, 255, 255, 0.1) !important;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    padding: 0.5rem 0;
+}
+
+.navbar-glass .navbar-brand {
+    color: var(--pistachio-primary) !important;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.navbar-glass .nav-link {
+    color: var(--black) !important;
+    font-weight: 500;
+    padding: 0.5rem 1rem !important;
+    transition: all 0.3s ease;
+}
+
+.navbar-glass .nav-link:hover {
+    color: var(--pistachio-primary) !important;
+}
+
+/* Hide collapse elements */
+.navbar-glass .navbar-toggler,
+.navbar-glass .navbar-collapse {
+    display: none;
+}

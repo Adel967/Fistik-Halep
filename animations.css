@@ -1,0 +1,52 @@
+/* ===== ANIMATIONS ===== */
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.animate-title {
+    opacity: 0;
+    transform: translateY(40px);
+    animation: slideInUp 1s ease-out 0.5s forwards;
+}
+
+.animate-subtitle {
+    opacity: 0;
+    transform: translateY(40px);
+    animation: slideInUp 1s ease-out 0.7s forwards;
+}
+
+.animate-buttons {
+    opacity: 0;
+    transform: translateY(40px);
+    animation: slideInUp 1s ease-out 0.9s forwards;
+}
+
+.animate-image {
+    opacity: 0;
+    transform: translateX(30px);
+    animation: slideInRight 0.8s ease-out 0.4s forwards;
+}
+
+.carousel-item:not(.active) [class*="animate-"] {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: none;
+}
